@@ -28,25 +28,9 @@ If you are using Docker for Mac <= 1.11, or Docker Toolbox for Windows (your doc
 docker-compose up -d
 ```
 
-Start the producer:
+Start the producer. The producer will publish a Hello World message to topic: hello-world-messages
 
-```
-cd spring-kafka-producer
-mvn spring-boot:run
-``` 
-
-The producer will publish a Hello World message to topic: hello-world-messages
-
-Start the consumer:
-
-```
-cd
-mvn spring-boot:run
-``` 
-
-How the consumer metrics:
-
-[http://localhost:8081/metrics/](http://localhost:8081/metrics/)
+Start the consumer.
 
 Kafka metrics are visible.
 
